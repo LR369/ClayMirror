@@ -1,0 +1,73 @@
+- !<AssetImportMetadata/25fa5ba6-f0d4-420b-b858-55a445df4b39>
+  ImportedAssetIds:
+    TypeScriptAsset: !<reference> 418795af-21d9-4c83-93ac-37fe0e35a722
+  ImporterName: TypeScriptAssetImporter
+  PrimaryAsset: !<reference> 418795af-21d9-4c83-93ac-37fe0e35a722
+  PackageType: NotAPackage
+  LegacyPackagePolicy: ~
+  ExtraData:
+    {}
+  AssetDataMap:
+    TypeScriptAsset: !<own> 1d1c199f-c290-4215-b1a5-9e346ba99f0d
+  DependentFiles:
+    []
+  ImporterSettings: !<AssetImporterSettings>
+    {}
+  CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
+- !<TypeScriptAssetData/1d1c199f-c290-4215-b1a5-9e346ba99f0d>
+  SvgIcon: ""
+  SetupScript:
+    code: ""
+  Description: ""
+  VersionMajor: 0
+  VersionMinor: 0
+  VersionPatch: 0
+  VersionPrerelease: ""
+  UpdateOrder: 0
+  ComponentUid: 26da8b38-009d-4764-bd12-83ae20d1960e
+  ExportUid: 00000000-0000-0000-0000-000000000000
+  PackagePolicy: CanBeUnpacked
+  ScriptInputsHidden:
+    bodyColor: false
+    headColor: false
+    headDiameterCm: false
+    litMaterial: false
+    markColor: false
+    spinRpm: false
+    wheelHead: false
+  ScriptTypesHidden:
+    {}
+  ReadMe: !<reference> 00000000-0000-0000-0000-000000000000
+  DeclarationFile: !<reference> 00000000-0000-0000-0000-000000000000
+  Tags:
+    []
+  Attachments:
+    []
+  DefaultScriptInputs:
+    - litMaterial: !<reference.Material> 00000000-0000-0000-0000-000000000000
+      wheelHead: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      headDiameterCm: !<float> 30.000000
+      spinRpm: !<float> 90.000000
+      headColor: !<Vec4> {x: 0.920000, y: 0.920000, z: 0.950000, w: 1.000000}
+      bodyColor: !<Vec4> {x: 0.620000, y: 0.780000, z: 0.860000, w: 1.000000}
+      markColor: !<Vec4> {x: 0.950000, y: 0.620000, z: 0.450000, w: 1.000000}
+  ScriptTypes:
+    -
+      {}
+  InputLines:
+    - "// @ui {\"widget\":\"label\", \"label\":\"<span style=\\\"color: #60A5FA;\\\">ClayMirrorWheelController – potter's wheel + spin</span>\"}"
+    - '// @ui {"widget":"separator"}'
+    - '// @ui {"widget":"label", "label":"<span style=\"color: #60A5FA;\">References</span>"}'
+    - '// @ui {"widget":"group_start", "label":"References"}'
+    - '// @input Asset.Material litMaterial {"hint":"Lit material (PBR) cloned and tinted for the wheel parts"}'
+    - '// @input SceneObject wheelHead {"hint":"Authored child that spins (wheel head). Its local Y is the top of the wheel column."}'
+    - '// @ui {"widget":"group_end"}'
+    - '// @ui {"widget":"separator"}'
+    - '// @ui {"widget":"label", "label":"<span style=\"color: #60A5FA;\">Settings</span>"}'
+    - '// @ui {"widget":"group_start", "label":"Settings"}'
+    - '// @input float headDiameterCm = 30 {"hint":"Wheel head diameter in cm", "widget":"slider", "min":20, "max":40, "step":1}'
+    - '// @input float spinRpm = 90 {"hint":"Wheel speed in revolutions per minute", "widget":"slider", "min":10, "max":200, "step":5}'
+    - '// @input vec4 headColor = "{0.92,0.92,0.95,1}" {"hint":"Wheel head color", "widget":"color"}'
+    - '// @input vec4 bodyColor = "{0.62,0.78,0.86,1}" {"hint":"Wheel body / splash pan color", "widget":"color"}'
+    - '// @input vec4 markColor = "{0.95,0.62,0.45,1}" {"hint":"Color of the marks on the wheel head (makes the spin visible)", "widget":"color"}'
+    - '// @ui {"widget":"group_end"}'

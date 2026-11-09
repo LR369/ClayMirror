@@ -1,0 +1,150 @@
+- !<AssetImportMetadata/89df3006-1ce6-44c7-bb6f-90d50a5fddc8>
+  ImportedAssetIds:
+    TypeScriptAsset: !<reference> 34eb7f61-f0e7-4fb7-9e1f-51eb185dfaa4
+  ImporterName: TypeScriptAssetImporter
+  PrimaryAsset: !<reference> 34eb7f61-f0e7-4fb7-9e1f-51eb185dfaa4
+  PackageType: NotAPackage
+  LegacyPackagePolicy: ~
+  ExtraData:
+    {}
+  AssetDataMap:
+    TypeScriptAsset: !<own> 180ea10c-d9c5-4432-b6de-5798aaa4e9e3
+  DependentFiles:
+    []
+  ImporterSettings: !<AssetImporterSettings>
+    {}
+  CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
+- !<TypeScriptAssetData/180ea10c-d9c5-4432-b6de-5798aaa4e9e3>
+  SvgIcon: ""
+  SetupScript:
+    code: ""
+  Description: ""
+  VersionMajor: 0
+  VersionMinor: 0
+  VersionPatch: 0
+  VersionPrerelease: ""
+  UpdateOrder: 0
+  ComponentUid: c744bd2e-6a2b-4e25-a277-d20fb5c4c44a
+  ExportUid: 00000000-0000-0000-0000-000000000000
+  PackagePolicy: CanBeUnpacked
+  ScriptInputsHidden:
+    audio: false
+    clay: false
+    controlsUI: false
+    debugColliders: false
+    gearUI: false
+    greatThreshold: false
+    greatXp: false
+    hintAnchorBench: false
+    hintAnchorClay: false
+    hintAnchorTarget: false
+    hintAnchorWheel: false
+    hintDropText: false
+    hintMatchText: false
+    hintPlaceText: false
+    hintSculptText: false
+    hintUI: false
+    hintWipeText: false
+    masterThreshold: false
+    masterXp: false
+    matchHintSeconds: false
+    noCollapseXp: false
+    noUndoXp: false
+    placement: false
+    placementUI: false
+    scoreUI: false
+    showHints: false
+    showLivePercent: false
+    target: false
+    wheel: false
+    xpPerLevel: false
+  ScriptTypesHidden:
+    {}
+  ReadMe: !<reference> 00000000-0000-0000-0000-000000000000
+  DeclarationFile: !<reference> 00000000-0000-0000-0000-000000000000
+  Tags:
+    []
+  Attachments:
+    []
+  DefaultScriptInputs:
+    - placement: !<MappingBased.AssignableType_1> 00000000-0000-0000-0000-000000000000
+      wheel: !<MappingBased.AssignableType_2> 00000000-0000-0000-0000-000000000000
+      clay: !<MappingBased.AssignableType_3> 00000000-0000-0000-0000-000000000000
+      target: !<MappingBased.AssignableType_4> 00000000-0000-0000-0000-000000000000
+      audio: !<MappingBased.AssignableType_5> 00000000-0000-0000-0000-000000000000
+      placementUI: !<MappingBased.AssignableType_6> 00000000-0000-0000-0000-000000000000
+      controlsUI: !<MappingBased.AssignableType_7> 00000000-0000-0000-0000-000000000000
+      gearUI: !<MappingBased.AssignableType_8> 00000000-0000-0000-0000-000000000000
+      scoreUI: !<MappingBased.AssignableType_9> 00000000-0000-0000-0000-000000000000
+      hintUI: !<MappingBased.AssignableType_10> 00000000-0000-0000-0000-000000000000
+      hintAnchorBench: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      hintAnchorClay: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      hintAnchorWheel: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      hintAnchorTarget: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      hintPlaceText: "Drag the bench where you want it, set the height, then pinch Start"
+      hintDropText: Pick up the clay and drop it on the wheel
+      hintSculptText: Pinch and drag inward or outward to shape the clay
+      hintMatchText: Match the target
+      hintWipeText: Grab the sponge and wipe the wheel clean
+      matchHintSeconds: !<float> 4.000000
+      showLivePercent: false
+      showHints: true
+      xpPerLevel: !<float> 150.000000
+      masterThreshold: !<float> 90.000000
+      masterXp: !<float> 50.000000
+      greatThreshold: !<float> 75.000000
+      greatXp: !<float> 25.000000
+      noCollapseXp: !<float> 15.000000
+      noUndoXp: !<float> 10.000000
+      debugColliders: false
+  ScriptTypes:
+    -
+      {}
+  InputLines:
+    - '// @ui {"widget":"label", "label":"<span style=\"color: #60A5FA;\">ClayMirrorMain – placement → drop → sculpt → Done</span>"}'
+    - '// @ui {"widget":"separator"}'
+    - '// @ui {"widget":"label", "label":"<span style=\"color: #60A5FA;\">References</span>"}'
+    - '// @ui {"widget":"group_start", "label":"References"}'
+    - '// @input AssignableType_1 placement {"hint":"Bench placement step (drag + height)"}'
+    - "// @input AssignableType_2 wheel {\"hint\":\"Potter's wheel\"}"
+    - '// @input AssignableType_3 clay {"hint":"Clay block / sculpting"}'
+    - '// @input AssignableType_4 target {"hint":"Target vase + ghost outline"}'
+    - '// @input AssignableType_5 audio {"hint":"Spatial wheel sounds + music"}'
+    - '// @input AssignableType_6 placementUI {"hint":"Height slider + Start (bench front edge)"}'
+    - '// @input AssignableType_7 controlsUI {"hint":"Start Over / Undo / Done buttons"}'
+    - '// @input AssignableType_8 gearUI {"hint":"Gear button (back to placement)"}'
+    - '// @input AssignableType_9 scoreUI {"hint":"Live match % + results above the target"}'
+    - '// @input AssignableType_10 hintUI {"hint":"FTUE hint bubble"}'
+    - '// @input SceneObject hintAnchorBench {"hint":"Hint position above the bench front edge (placement hint)"}'
+    - '// @input SceneObject hintAnchorClay {"hint":"Hint position above the resting clay block"}'
+    - '// @input SceneObject hintAnchorWheel {"hint":"Hint position above the wheel"}'
+    - '// @input SceneObject hintAnchorTarget {"hint":"Hint position above the live match %"}'
+    - '// @ui {"widget":"group_end"}'
+    - '// @ui {"widget":"separator"}'
+    - '// @ui {"widget":"label", "label":"<span style=\"color: #60A5FA;\">Settings</span>"}'
+    - '// @ui {"widget":"group_start", "label":"Settings"}'
+    - '// @input string hintPlaceText = "Drag the bench where you want it, set the height, then pinch Start" {"hint":"Hint 0 — shown at the very start"}'
+    - '// @input string hintDropText = "Pick up the clay and drop it on the wheel" {"hint":"Hint 1 — after Start, above the clay"}'
+    - '// @input string hintSculptText = "Pinch and drag the clay to fill the white outline" {"hint":"Hint 2 — once the clay lands, above the wheel"}'
+    - '// @input string hintMatchText = "Match the target: fill the white outline" {"hint":"Hint 3 — after the first drag, above the target"}'
+    - '// @input string hintWipeText = "Grab the sponge and wipe the wheel clean" {"hint":"Hint after collecting points, above the sponge on its hook (shown every round)"}'
+    - "// @input float matchHintSeconds = 4 {\"hint\":\"Seconds the 'Match the target' hint stays up\", \"widget\":\"slider\", \"min\":1, \"max\":10, \"step\":0.5}"
+    - '// @input bool showLivePercent {"hint":"Show the live match % while sculpting (off: the score is only revealed after Done)"}'
+    - '// @input bool showHints = true {"hint":"Show first-time hints"}'
+    - '// @ui {"widget":"group_end"}'
+    - '// @ui {"widget":"separator"}'
+    - '// @ui {"widget":"label", "label":"<span style=\"color: #60A5FA;\">Scoring</span>"}'
+    - '// @ui {"widget":"group_start", "label":"Scoring"}'
+    - '// @input float xpPerLevel = 150 {"hint":"Potter-skill XP needed per level (fills the skill bar once)", "widget":"slider", "min":50, "max":500, "step":10}'
+    - "// @input float masterThreshold = 90 {\"hint\":\"Match % for the 'Master Potter' bonus\", \"widget\":\"slider\", \"min\":50, \"max\":100, \"step\":1}"
+    - "// @input float masterXp = 50 {\"hint\":\"XP for the 'Master Potter' bonus\", \"widget\":\"slider\", \"min\":0, \"max\":200, \"step\":5}"
+    - "// @input float greatThreshold = 75 {\"hint\":\"Match % for the 'Great Match' bonus\", \"widget\":\"slider\", \"min\":50, \"max\":100, \"step\":1}"
+    - "// @input float greatXp = 25 {\"hint\":\"XP for the 'Great Match' bonus\", \"widget\":\"slider\", \"min\":0, \"max\":200, \"step\":5}"
+    - "// @input float noCollapseXp = 15 {\"hint\":\"XP for finishing without a collapse ('Steady Hands')\", \"widget\":\"slider\", \"min\":0, \"max\":100, \"step\":5}"
+    - "// @input float noUndoXp = 10 {\"hint\":\"XP for finishing without Undo ('Clean Throw')\", \"widget\":\"slider\", \"min\":0, \"max\":100, \"step\":5}"
+    - '// @ui {"widget":"group_end"}'
+    - '// @ui {"widget":"separator"}'
+    - '// @ui {"widget":"label", "label":"<span style=\"color: #60A5FA;\">Debug</span>"}'
+    - '// @ui {"widget":"group_start", "label":"Debug"}'
+    - '// @input bool debugColliders {"hint":"Wireframe every collider in the scene (takes effect on preview restart)"}'
+    - '// @ui {"widget":"group_end"}'

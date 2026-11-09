@@ -1,0 +1,66 @@
+- !<AssetImportMetadata/3a1495a9-def9-4456-9c07-fbe54bcc5749>
+  ImportedAssetIds:
+    TypeScriptAsset: !<reference> 425b3222-98df-42f0-a85d-fc4762ac828d
+  ImporterName: TypeScriptAssetImporter
+  PrimaryAsset: !<reference> 425b3222-98df-42f0-a85d-fc4762ac828d
+  PackageType: NotAPackage
+  LegacyPackagePolicy: ~
+  ExtraData:
+    {}
+  AssetDataMap:
+    TypeScriptAsset: !<own> 9dbdb925-0ceb-42bf-9983-ea67544bce84
+  DependentFiles:
+    []
+  ImporterSettings: !<AssetImporterSettings>
+    {}
+  CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
+- !<TypeScriptAssetData/9dbdb925-0ceb-42bf-9983-ea67544bce84>
+  SvgIcon: ""
+  SetupScript:
+    code: ""
+  Description: ""
+  VersionMajor: 0
+  VersionMinor: 0
+  VersionPatch: 0
+  VersionPrerelease: ""
+  UpdateOrder: 0
+  ComponentUid: d2ad8231-5f13-4a76-abdd-5465ab824d1e
+  ExportUid: 00000000-0000-0000-0000-000000000000
+  PackagePolicy: CanBeUnpacked
+  ScriptInputsHidden:
+    chimeVolume: false
+    clickVolume: false
+    humVolume: false
+    musicVolume: false
+    splatVolume: false
+    squishVolume: false
+  ScriptTypesHidden:
+    {}
+  ReadMe: !<reference> 00000000-0000-0000-0000-000000000000
+  DeclarationFile: !<reference> 00000000-0000-0000-0000-000000000000
+  Tags:
+    []
+  Attachments:
+    []
+  DefaultScriptInputs:
+    - humVolume: 0.450000
+      squishVolume: 0.800000
+      splatVolume: 0.900000
+      chimeVolume: 0.800000
+      clickVolume: 0.600000
+      musicVolume: 0.250000
+  ScriptTypes:
+    -
+      {}
+  InputLines:
+    - '// @ui {"widget":"label", "label":"<span style=\"color: #60A5FA;\">ClayMirrorAudioController – spatial wheel sounds + music bed</span>"}'
+    - '// @ui {"widget":"separator"}'
+    - '// @ui {"widget":"label", "label":"<span style=\"color: #60A5FA;\">Settings</span>"}'
+    - '// @ui {"widget":"group_start", "label":"Settings"}'
+    - '// @input float humVolume = 0.45 {"hint":"Wheel hum loudness while spinning", "widget":"slider", "min":0, "max":1, "step":0.05}'
+    - '// @input float squishVolume = 0.8 {"hint":"Clay squish loudness while dragging", "widget":"slider", "min":0, "max":1, "step":0.05}'
+    - '// @input float splatVolume = 0.9 {"hint":"Collapse splat loudness", "widget":"slider", "min":0, "max":1, "step":0.05}'
+    - '// @input float chimeVolume = 0.8 {"hint":"Done chime loudness", "widget":"slider", "min":0, "max":1, "step":0.05}'
+    - '// @input float clickVolume = 0.6 {"hint":"Button click loudness", "widget":"slider", "min":0, "max":1, "step":0.05}'
+    - '// @input float musicVolume = 0.25 {"hint":"Background music loudness (0 = off)", "widget":"slider", "min":0, "max":1, "step":0.05}'
+    - '// @ui {"widget":"group_end"}'

@@ -1,0 +1,60 @@
+- !<AssetImportMetadata/70deb4ad-a977-4f8e-96ea-dc1fb634d5d9>
+  ImportedAssetIds:
+    TypeScriptAsset: !<reference> 64f06156-2389-4080-b1e9-5d25dc703bef
+  ImporterName: TypeScriptAssetImporter
+  PrimaryAsset: !<reference> 64f06156-2389-4080-b1e9-5d25dc703bef
+  PackageType: NotAPackage
+  LegacyPackagePolicy: ~
+  ExtraData:
+    {}
+  AssetDataMap:
+    TypeScriptAsset: !<own> d538f94e-071a-421a-9637-b52b79d28220
+  DependentFiles:
+    []
+  ImporterSettings: !<AssetImporterSettings>
+    {}
+  CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
+- !<TypeScriptAssetData/d538f94e-071a-421a-9637-b52b79d28220>
+  SvgIcon: ""
+  SetupScript:
+    code: ""
+  Description: ""
+  VersionMajor: 0
+  VersionMinor: 0
+  VersionPatch: 0
+  VersionPrerelease: ""
+  UpdateOrder: 0
+  ComponentUid: 5924f9dd-e159-4ab2-8dcb-fe39d28ea452
+  ExportUid: 00000000-0000-0000-0000-000000000000
+  PackagePolicy: CanBeUnpacked
+  ScriptInputsHidden:
+    buttonSizeCm: false
+    caption: false
+    textColor: false
+    textDistanceCm: false
+  ScriptTypesHidden:
+    {}
+  ReadMe: !<reference> 00000000-0000-0000-0000-000000000000
+  DeclarationFile: !<reference> 00000000-0000-0000-0000-000000000000
+  Tags:
+    []
+  Attachments:
+    []
+  DefaultScriptInputs:
+    - buttonSizeCm: !<float> 6.000000
+      caption: Move bench
+      textDistanceCm: !<float> 95.000000
+      textColor: !<Vec4> {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+  ScriptTypes:
+    -
+      {}
+  InputLines:
+    - '// @ui {"widget":"label", "label":"<span style=\"color: #60A5FA;\">ClayMirrorGearUI – back to bench placement</span>"}'
+    - '// @ui {"widget":"separator"}'
+    - '// @ui {"widget":"label", "label":"<span style=\"color: #60A5FA;\">Settings</span>"}'
+    - '// @ui {"widget":"group_start", "label":"Settings"}'
+    - '// @input float buttonSizeCm = 6 {"hint":"Gear button size (cm)", "widget":"slider", "min":4, "max":10, "step":0.5}'
+    - '// @input string caption = "Move bench" {"hint":"Caption under the gear"}'
+    - '// @input float textDistanceCm = 95 {"hint":"Viewing distance used to scale text (cm)", "widget":"slider", "min":40, "max":140, "step":1}'
+    - '// @input vec4 textColor = "{1,1,1,1}" {"hint":"Text color", "widget":"color"}'
+    - '// @ui {"widget":"group_end"}'

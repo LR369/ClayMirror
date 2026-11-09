@@ -1,0 +1,60 @@
+- !<AssetImportMetadata/e24c1eb9-8bfc-45d5-aa4a-c1dbcfbffee1>
+  ImportedAssetIds:
+    TypeScriptAsset: !<reference> 964140c5-3907-4712-be8d-5f5d4f6804cc
+  ImporterName: TypeScriptAssetImporter
+  PrimaryAsset: !<reference> 964140c5-3907-4712-be8d-5f5d4f6804cc
+  PackageType: NotAPackage
+  LegacyPackagePolicy: ~
+  ExtraData:
+    {}
+  AssetDataMap:
+    TypeScriptAsset: !<own> b11dce1e-15f2-4ab4-be2b-25e14ea139c8
+  DependentFiles:
+    []
+  ImporterSettings: !<AssetImporterSettings>
+    {}
+  CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
+- !<TypeScriptAssetData/b11dce1e-15f2-4ab4-be2b-25e14ea139c8>
+  SvgIcon: ""
+  SetupScript:
+    code: ""
+  Description: ""
+  VersionMajor: 0
+  VersionMinor: 0
+  VersionPatch: 0
+  VersionPrerelease: ""
+  UpdateOrder: 0
+  ComponentUid: 2570260e-6561-4443-b9ce-a8670ca4f36f
+  ExportUid: 00000000-0000-0000-0000-000000000000
+  PackagePolicy: CanBeUnpacked
+  ScriptInputsHidden:
+    buttonSizeCm: false
+    doneRingColor: false
+    sideRingColor: false
+    startOverGapCm: false
+  ScriptTypesHidden:
+    {}
+  ReadMe: !<reference> 00000000-0000-0000-0000-000000000000
+  DeclarationFile: !<reference> 00000000-0000-0000-0000-000000000000
+  Tags:
+    []
+  Attachments:
+    []
+  DefaultScriptInputs:
+    - buttonSizeCm: !<float> 8.000000
+      startOverGapCm: !<float> 3.000000
+      sideRingColor: !<Vec4> {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+      doneRingColor: !<Vec4> {x: 0.450000, y: 1.000000, z: 0.550000, w: 1.000000}
+  ScriptTypes:
+    -
+      {}
+  InputLines:
+    - '// @ui {"widget":"label", "label":"<span style=\"color: #60A5FA;\">ClayMirrorControlsUI – Start Over / Undo / Done (icon row in front of the wheel)</span>"}'
+    - '// @ui {"widget":"separator"}'
+    - '// @ui {"widget":"label", "label":"<span style=\"color: #60A5FA;\">Settings</span>"}'
+    - '// @ui {"widget":"group_start", "label":"Settings"}'
+    - '// @input float buttonSizeCm = 5.5 {"hint":"Button size (cm)", "widget":"slider", "min":4, "max":10, "step":0.5}'
+    - '// @input float startOverGapCm = 3 {"hint":"Extra gap that keeps Start Over apart from Done (cm)", "widget":"slider", "min":0, "max":8, "step":0.5}'
+    - '// @input vec4 sideRingColor = "{1,1,1,1}" {"hint":"Ring color for Undo / Start Over (keep light — additive display)", "widget":"color"}'
+    - '// @input vec4 doneRingColor = "{0.45,1.0,0.55,1}" {"hint":"Ring color for Done (thumbs up)", "widget":"color"}'
+    - '// @ui {"widget":"group_end"}'

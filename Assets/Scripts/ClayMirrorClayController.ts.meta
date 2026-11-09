@@ -1,0 +1,94 @@
+- !<AssetImportMetadata/770955a5-eed1-415e-9408-256f85cf2d6d>
+  ImportedAssetIds:
+    TypeScriptAsset: !<reference> 07f699ac-07d8-40f9-b6cb-c6a2e8301ef6
+  ImporterName: TypeScriptAssetImporter
+  PrimaryAsset: !<reference> 07f699ac-07d8-40f9-b6cb-c6a2e8301ef6
+  PackageType: NotAPackage
+  LegacyPackagePolicy: ~
+  ExtraData:
+    {}
+  AssetDataMap:
+    TypeScriptAsset: !<own> 2fbae785-23f3-4935-90b0-ebd65c1ba8a8
+  DependentFiles:
+    []
+  ImporterSettings: !<AssetImporterSettings>
+    {}
+  CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
+- !<TypeScriptAssetData/2fbae785-23f3-4935-90b0-ebd65c1ba8a8>
+  SvgIcon: ""
+  SetupScript:
+    code: ""
+  Description: ""
+  VersionMajor: 0
+  VersionMinor: 0
+  VersionPatch: 0
+  VersionPrerelease: ""
+  UpdateOrder: 0
+  ComponentUid: 98193d43-b38e-47e8-bf21-c8bca68a5592
+  ExportUid: 00000000-0000-0000-0000-000000000000
+  PackagePolicy: CanBeUnpacked
+  ScriptInputsHidden:
+    clayAnchor: false
+    clayColor: false
+    collapseMaxHeightCm: false
+    collapseMinRadiusCm: false
+    dropRadiusCm: false
+    falloffCm: false
+    litMaterial: false
+    pinchRingObject: false
+    restAnchor: false
+    ringColor: false
+    ringPinchBoost: false
+    sculptGain: false
+    unlitMaterial: false
+    wheel: false
+  ScriptTypesHidden:
+    {}
+  ReadMe: !<reference> 00000000-0000-0000-0000-000000000000
+  DeclarationFile: !<reference> 00000000-0000-0000-0000-000000000000
+  Tags:
+    []
+  Attachments:
+    []
+  DefaultScriptInputs:
+    - wheel: !<MappingBased.AssignableType_1> 00000000-0000-0000-0000-000000000000
+      restAnchor: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      clayAnchor: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      pinchRingObject: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      litMaterial: !<reference.Material> 00000000-0000-0000-0000-000000000000
+      unlitMaterial: !<reference.Material> 00000000-0000-0000-0000-000000000000
+      clayColor: !<Vec4> {x: 0.930000, y: 0.660000, z: 0.500000, w: 1.000000}
+      ringColor: !<Vec4> {x: 0.550000, y: 1.000000, z: 0.650000, w: 0.550000}
+      ringPinchBoost: 1.800000
+      dropRadiusCm: !<float> 18.000000
+      collapseMinRadiusCm: 1.200000
+      collapseMaxHeightCm: !<float> 34.000000
+      sculptGain: !<float> 1.000000
+      falloffCm: 2.600000
+  ScriptTypes:
+    -
+      {}
+  InputLines:
+    - '// @ui {"widget":"label", "label":"<span style=\"color: #60A5FA;\">ClayMirrorClayController – drop, sculpt, collapse, undo</span>"}'
+    - '// @ui {"widget":"separator"}'
+    - '// @ui {"widget":"label", "label":"<span style=\"color: #60A5FA;\">References</span>"}'
+    - '// @ui {"widget":"group_start", "label":"References"}'
+    - "// @input AssignableType_1 wheel {\"hint\":\"The potter's wheel (spin angle + state)\"}"
+    - '// @input SceneObject restAnchor {"hint":"Where the fresh block rests on the bench beside the wheel"}'
+    - '// @input SceneObject clayAnchor {"hint":"Top-center of the wheel head; the clay snaps here when dropped"}'
+    - '// @input SceneObject pinchRingObject {"hint":"Object that holds the glowing pinch ring (built at runtime)"}'
+    - '// @input Asset.Material litMaterial {"hint":"Lit material (PBR) for the clay"}'
+    - '// @input Asset.Material unlitMaterial {"hint":"Unlit material for the glowing pinch ring"}'
+    - '// @ui {"widget":"group_end"}'
+    - '// @ui {"widget":"separator"}'
+    - '// @ui {"widget":"label", "label":"<span style=\"color: #60A5FA;\">Settings</span>"}'
+    - '// @ui {"widget":"group_start", "label":"Settings"}'
+    - '// @input vec4 clayColor = "{0.93,0.66,0.50,1}" {"hint":"Clay color (keep it light — the display is additive)", "widget":"color"}'
+    - '// @input vec4 ringColor = "{0.55,1.0,0.65,0.55}" {"hint":"Pinch ring color while aiming", "widget":"color"}'
+    - '// @input float ringPinchBoost = 1.8 {"hint":"Ring brightness multiplier while pinching", "widget":"slider", "min":1, "max":3, "step":0.1}'
+    - '// @input float dropRadiusCm = 18 {"hint":"Release the block within this horizontal distance of the wheel center to land it (cm)", "widget":"slider", "min":8, "max":30, "step":1}'
+    - '// @input float collapseMinRadiusCm = 1.2 {"hint":"Collapse if any part gets thinner than this radius (cm)", "widget":"slider", "min":0.5, "max":3, "step":0.1}'
+    - '// @input float collapseMaxHeightCm = 34 {"hint":"Collapse if the piece is pulled taller than this (cm)", "widget":"slider", "min":20, "max":45, "step":1}'
+    - '// @input float sculptGain = 1 {"hint":"How strongly a drag reshapes the clay", "widget":"slider", "min":0.3, "max":2, "step":0.05}'
+    - '// @input float falloffCm = 2.6 {"hint":"How wide a band each pinch reshapes (cm)", "widget":"slider", "min":1, "max":6, "step":0.1}'
+    - '// @ui {"widget":"group_end"}'

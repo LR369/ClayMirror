@@ -1,0 +1,72 @@
+- !<AssetImportMetadata/ed0c4037-9a1b-4c48-89d3-0d29a5a8b517>
+  ImportedAssetIds:
+    TypeScriptAsset: !<reference> 8a4d6f3b-b9a1-44f1-84c8-3bfc4aa8da46
+  ImporterName: TypeScriptAssetImporter
+  PrimaryAsset: !<reference> 8a4d6f3b-b9a1-44f1-84c8-3bfc4aa8da46
+  PackageType: NotAPackage
+  LegacyPackagePolicy: ~
+  ExtraData:
+    {}
+  AssetDataMap:
+    TypeScriptAsset: !<own> f6a119c6-49b8-4f52-b88c-30ce75a98308
+  DependentFiles:
+    []
+  ImporterSettings: !<AssetImporterSettings>
+    {}
+  CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
+- !<TypeScriptAssetData/f6a119c6-49b8-4f52-b88c-30ce75a98308>
+  SvgIcon: ""
+  SetupScript:
+    code: ""
+  Description: ""
+  VersionMajor: 0
+  VersionMinor: 0
+  VersionPatch: 0
+  VersionPrerelease: ""
+  UpdateOrder: 0
+  ComponentUid: a25fdf91-90f1-4e69-967d-43dfd908f388
+  ExportUid: 00000000-0000-0000-0000-000000000000
+  PackagePolicy: CanBeUnpacked
+  ScriptInputsHidden:
+    bobAmplitudeCm: false
+    bobSpeedHz: false
+    borderColor: false
+    fillColor: false
+    heightCm: false
+    textColor: false
+    textDistanceCm: false
+    widthCm: false
+  ScriptTypesHidden:
+    {}
+  ReadMe: !<reference> 00000000-0000-0000-0000-000000000000
+  DeclarationFile: !<reference> 00000000-0000-0000-0000-000000000000
+  Tags:
+    []
+  Attachments:
+    []
+  DefaultScriptInputs:
+    - widthCm: !<float> 30.000000
+      heightCm: !<float> 6.000000
+      textColor: !<Vec4> {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+      borderColor: !<Vec4> {x: 0.550000, y: 1.000000, z: 0.600000, w: 1.000000}
+      fillColor: !<Vec4> {x: 0.100000, y: 0.350000, z: 0.180000, w: 0.550000}
+      bobAmplitudeCm: 0.800000
+      bobSpeedHz: 0.500000
+      textDistanceCm: !<float> 85.000000
+  ScriptTypes:
+    -
+      {}
+  InputLines:
+    - '// @ui {"widget":"label", "label":"<span style=\"color: #60A5FA;\">ClayMirrorHintUI – bobbing FTUE hint bubble</span>"}'
+    - '// @ui {"widget":"separator"}'
+    - '// @ui {"widget":"label", "label":"<span style=\"color: #60A5FA;\">Settings</span>"}'
+    - '// @ui {"widget":"group_start", "label":"Settings"}'
+    - '// @input float widthCm = 30 {"hint":"Bubble width (cm)", "widget":"slider", "min":10, "max":50, "step":0.5}'
+    - '// @input float heightCm = 6 {"hint":"Bubble height (cm)", "widget":"slider", "min":3, "max":15, "step":0.5}'
+    - '// @input vec4 textColor = "{1,1,1,1}" {"hint":"Hint text color", "widget":"color"}'
+    - '// @input vec4 borderColor = "{0.55,1.0,0.6,1}" {"hint":"Neon border color", "widget":"color"}'
+    - '// @input vec4 fillColor = "{0.10,0.35,0.18,0.55}" {"hint":"Bubble fill color (subtle on the additive display)", "widget":"color"}'
+    - '// @input float bobAmplitudeCm = 0.8 {"hint":"Bob amplitude (cm)", "widget":"slider", "min":0, "max":3, "step":0.1}'
+    - '// @input float bobSpeedHz = 0.5 {"hint":"Bob speed (cycles per second)", "widget":"slider", "min":0.1, "max":2, "step":0.05}'
+    - '// @input float textDistanceCm = 85 {"hint":"Viewing distance used to scale text (cm)", "widget":"slider", "min":40, "max":140, "step":1}'
+    - '// @ui {"widget":"group_end"}'

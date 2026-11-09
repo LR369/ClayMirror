@@ -1,0 +1,91 @@
+- !<AssetImportMetadata/3df8f3da-f87c-4103-addb-3383c8a9e72a>
+  ImportedAssetIds:
+    TypeScriptAsset: !<reference> e1f1ec74-62c2-4332-9c31-c81a8d1a81b6
+  ImporterName: TypeScriptAssetImporter
+  PrimaryAsset: !<reference> e1f1ec74-62c2-4332-9c31-c81a8d1a81b6
+  PackageType: NotAPackage
+  LegacyPackagePolicy: ~
+  ExtraData:
+    {}
+  AssetDataMap:
+    TypeScriptAsset: !<own> 6623e386-7065-4552-b26a-005c2657a8a6
+  DependentFiles:
+    []
+  ImporterSettings: !<AssetImporterSettings>
+    {}
+  CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
+- !<TypeScriptAssetData/6623e386-7065-4552-b26a-005c2657a8a6>
+  SvgIcon: ""
+  SetupScript:
+    code: ""
+  Description: ""
+  VersionMajor: 0
+  VersionMinor: 0
+  VersionPatch: 0
+  VersionPrerelease: ""
+  UpdateOrder: 0
+  ComponentUid: 3122ff1a-3b3d-4396-85ae-2d529b17c5e8
+  ExportUid: 00000000-0000-0000-0000-000000000000
+  PackagePolicy: CanBeUnpacked
+  ScriptInputsHidden:
+    benchDepthCm: false
+    benchGrab: false
+    benchVisual: false
+    benchWidthCm: false
+    defaultHeightCm: false
+    eyeHeightCm: false
+    frontEdgeDistanceCm: false
+    litMaterial: false
+    maxHeightCm: false
+    minHeightCm: false
+    outlineColor: false
+    unlitMaterial: false
+    woodColor: false
+  ScriptTypesHidden:
+    {}
+  ReadMe: !<reference> 00000000-0000-0000-0000-000000000000
+  DeclarationFile: !<reference> 00000000-0000-0000-0000-000000000000
+  Tags:
+    []
+  Attachments:
+    []
+  DefaultScriptInputs:
+    - benchGrab: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      benchVisual: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      litMaterial: !<reference.Material> 00000000-0000-0000-0000-000000000000
+      unlitMaterial: !<reference.Material> 00000000-0000-0000-0000-000000000000
+      eyeHeightCm: !<float> 150.000000
+      defaultHeightCm: !<float> 75.000000
+      minHeightCm: !<float> 55.000000
+      maxHeightCm: !<float> 110.000000
+      frontEdgeDistanceCm: !<float> 40.000000
+      benchWidthCm: !<float> 100.000000
+      benchDepthCm: !<float> 60.000000
+      woodColor: !<Vec4> {x: 0.860000, y: 0.700000, z: 0.520000, w: 1.000000}
+      outlineColor: !<Vec4> {x: 0.750000, y: 1.000000, z: 0.850000, w: 0.700000}
+  ScriptTypes:
+    -
+      {}
+  InputLines:
+    - '// @ui {"widget":"label", "label":"<span style=\"color: #60A5FA;\">ClayMirrorPlacementController – place the bench (drag + height)</span>"}'
+    - '// @ui {"widget":"separator"}'
+    - '// @ui {"widget":"label", "label":"<span style=\"color: #60A5FA;\">References</span>"}'
+    - '// @ui {"widget":"group_start", "label":"References"}'
+    - '// @input SceneObject benchGrab {"hint":"Authored child holding the bench-top grab collider (built at runtime)"}'
+    - '// @input SceneObject benchVisual {"hint":"Authored child the bench visual is built under"}'
+    - '// @input Asset.Material litMaterial {"hint":"Lit material (PBR) for the wood"}'
+    - '// @input Asset.Material unlitMaterial {"hint":"Unlit material for the soft placement outline"}'
+    - '// @ui {"widget":"group_end"}'
+    - '// @ui {"widget":"separator"}'
+    - '// @ui {"widget":"label", "label":"<span style=\"color: #60A5FA;\">Settings</span>"}'
+    - '// @ui {"widget":"group_start", "label":"Settings"}'
+    - '// @input float eyeHeightCm = 150 {"hint":"Assumed eye height above the floor (cm) — sets where the floor is", "widget":"slider", "min":100, "max":190, "step":1}'
+    - '// @input float defaultHeightCm = 75 {"hint":"Starting bench-top height above the floor (cm)", "widget":"slider", "min":55, "max":110, "step":1}'
+    - '// @input float minHeightCm = 55 {"hint":"Lowest bench height on the slider (cm) — seated", "widget":"slider", "min":40, "max":80, "step":1}'
+    - '// @input float maxHeightCm = 110 {"hint":"Highest bench height on the slider (cm) — tall standing", "widget":"slider", "min":80, "max":130, "step":1}'
+    - "// @input float frontEdgeDistanceCm = 40 {\"hint\":\"Distance from the user to the bench's front edge at start (cm)\", \"widget\":\"slider\", \"min\":20, \"max\":80, \"step\":1}"
+    - '// @input float benchWidthCm = 100 {"hint":"Bench width (cm)", "widget":"slider", "min":60, "max":140, "step":1}'
+    - '// @input float benchDepthCm = 60 {"hint":"Bench depth (cm)", "widget":"slider", "min":40, "max":90, "step":1}'
+    - '// @input vec4 woodColor = "{0.86,0.70,0.52,1}" {"hint":"Bench wood color (light oak reads best on the additive display)", "widget":"color"}'
+    - '// @input vec4 outlineColor = "{0.75,1.0,0.85,0.7}" {"hint":"Soft outline shown while the bench can be moved", "widget":"color"}'
+    - '// @ui {"widget":"group_end"}'
